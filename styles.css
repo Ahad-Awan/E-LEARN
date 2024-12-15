@@ -179,7 +179,7 @@ main {
 
   & .hero-para {
     color: var(--white-color);
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 0 4rem 0;
     font-size: 1.7rem;
   }
 }
