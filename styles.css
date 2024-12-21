@@ -111,6 +111,7 @@ h1 h2 h3 h4 h5 h6 {
   --white-color: #ffffff;
   --btn-hover-bg-color: #003b99;
   --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --footer-bg-color: #040d12;
 }
 
 .section-navbar {
@@ -424,9 +425,13 @@ figure {
   margin: 0 auto;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
   border-radius: 0.5rem;
   padding: 3.2rem;
+  position: relative;
+  bottom: -15rem;
+  background-color: var(--white-color);
+  z-index: 1;
 
   & .grid {
     align-items: center;
@@ -459,3 +464,60 @@ figure {
 }
 
 /* end contact home section */
+
+/* Start footer section  */
+
+ul {
+  list-style-type: none;
+}
+
+footer {
+  background-color: var(--footer-bg-color);
+  padding-top: 15rem;
+}
+
+footer * {
+  color: var(--white-color);
+}
+
+footer .grid {
+  text-align: right;
+}
+
+.footer-subheading {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.footer-1 p {
+  margin: 1rem 0 2rem 0;
+}
+
+.footer-1 {
+  text-align: start;
+
+  & .social-media--icons {
+    display: flex;
+    gap: 2rem;
+
+    & .fa-brands {
+      width: 5rem;
+      aspect-ratio: 1;
+      background-color: var(--supporting-color);
+      color: var(--btn-hover-bg-color);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s, linear;
+
+      &:hover {
+        background-color: var(--btn-hover-bg-color);
+        color: var(--supporting-color);
+        rotate: 360deg;
+      }
+    }
+  }
+}
+
+/* End footer section  */
