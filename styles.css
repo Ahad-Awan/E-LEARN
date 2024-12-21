@@ -16,6 +16,14 @@ html {
   padding: 7.4rem 2.4rem;
 }
 
+.about-section .container:first-child,
+.blog-section .container:first-child,
+.course-section .container:first-child,
+.why-choose-section .container:first-child,
+.section-contact-homepage .container:first-child {
+  padding: 6.4rem 0 2rem 0;
+}
+
 .section-common-heading {
   font-size: 3.2rem;
   font-weight: 700;
@@ -96,7 +104,7 @@ h1 h2 h3 h4 h5 h6 {
   --main-color: #0062ff;
   --supporting-color: #ebf3fe;
   --font-color: #424242;
-  --bg-color: #ffffff;
+  --bg-color: #f7fcff;
   --heading-color: #000a19;
   --para-color: #504e4d;
   --h-color: #003b99;
@@ -267,6 +275,10 @@ main {
 
 /* Course Section Start  */
 
+.course-section {
+  background-color: var(--bg-color);
+}
+
 .course-section .grid {
   gap: 3.2rem;
 }
@@ -403,3 +415,47 @@ figure {
 }
 
 /* end why choose section */
+
+/* start contact home section  */
+
+.section-contact-homepage {
+  width: 65%;
+  min-height: 30rem;
+  margin: 0 auto;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin-bottom: 5rem;
+  border-radius: 0.5rem;
+  padding: 3.2rem;
+
+  & .grid {
+    align-items: center;
+    gap: 6.4rem;
+  }
+}
+
+.contact-title {
+  font-size: 5rem;
+  line-height: 1.2;
+}
+
+.contact-content p {
+  margin: 1.2rem 0 2.4rem 0;
+}
+
+.section-contact-homepage img {
+  width: 100%;
+  height: auto;
+}
+
+.section-contact-homepage a {
+  color: var(--white-color);
+}
+
+.section-contact-homepage .fa-solid {
+  padding: 0;
+  color: var(--white-color);
+  background-color: var(--main-color);
+}
+
+/* end contact home section */
