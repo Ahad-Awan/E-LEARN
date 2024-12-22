@@ -16,12 +16,25 @@ html {
   padding: 7.4rem 2.4rem;
 }
 
-.about-section .container:first-child,
+/* .about-section .container:first-child,
 .blog-section .container:first-child,
 .course-section .container:first-child,
 .why-choose-section .container:first-child,
-.section-contact-homepage .container:first-child {
-  padding: 6.4rem 0 2rem 0;
+.section-contact-homepage .container:first-child,
+.section-contact  .container:first-child{
+  padding: 3rem 0 0 0;
+} */
+
+:is(
+    .about-section,
+    .blog-section,
+    .course-section,
+    .why-choose-section,
+    .section-contact-homepage,
+    .section-contact
+  )
+  .container:first-child {
+  padding: 3rem 0 0 0;
 }
 
 .section-common-heading {
@@ -83,7 +96,8 @@ html {
 
 a,
 p,
-li {
+li,
+label {
   font-family: "Urbanist", sans-serif;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
@@ -417,6 +431,52 @@ figure {
 
 /* end why choose section */
 
+/* start blog section  */
+
+.section-blog {
+  background-color: var(--bg-color);
+
+  & .grid {
+    gap: 6rem;
+  }
+
+  & .blog {
+    box-shadow: var(--btn-box-shadow);
+    transition: scale 0.3s linear;
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    & .blog-content {
+      padding: 1.4rem 2.4rem 2.4rem;
+    }
+  }
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+
+  & .blog-data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+  }
+
+  & .fa-solid {
+    background-color: transparent;
+    color: var(--btn-hover-bg-color);
+    padding: 0;
+  }
+
+  & .section-common-titles {
+    margin-top: 0.8rem;
+  }
+}
+
+/* end blog section */
+
 /* start contact home section  */
 
 .section-contact-homepage {
@@ -464,6 +524,47 @@ figure {
 }
 
 /* end contact home section */
+
+/* start actual contact page section */
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+label {
+  display: block;
+  text-transform: capitalize;
+}
+
+.contact-info .grid {
+  gap: 6.4rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.4rem 2.4rem;
+  font-size: 1.78rem;
+  letter-spacing: 0.1rem;
+}
+
+::placeholder {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.btn-submit {
+  font-size: 1.8rem;
+  border: none;
+}
+
+.section-contact {
+  & .grid {
+    gap: 6.5rem;
+    align-items: center;
+  }
+}
+/* end actual contact page section */
 
 /* Start footer section  */
 
