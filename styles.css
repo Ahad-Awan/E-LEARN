@@ -564,6 +564,12 @@ textarea {
     align-items: center;
   }
 }
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: 0.1rem solid var(--btn-hover-bg-color);
+}
+
 /* end actual contact page section */
 
 /* Start footer section  */
@@ -622,3 +628,32 @@ footer .grid {
 }
 
 /* End footer section  */
+
+/* Scroll bar section */
+
+/* width  */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* track  */
+::-webkit-scrollbar-track {
+  background-color: var(--supporting-color);
+}
+
+/* thumb  */
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 50px;
+}
+
+/* thumb when hovering  */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--heading-color);
+}
+
+
+
+/* ? Scroll animation and scroll snap  */
+
+
